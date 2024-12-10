@@ -9,7 +9,6 @@
     import java.time.Duration;
 
     public class WaitFor {
-
         public static WebElement waitElementVisible(WebDriver driver, By locator) {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             //visibilityElementLocated check element exist in dom and see if it show
