@@ -10,7 +10,7 @@ public class BaseSetup {
 
     public static void setupDriver() {
         String browser = ReadConfig.getProperty("browser");
-        System.out.println("hi" + browser);
+        System.out.println("hi " + browser);
         switch (browser.toLowerCase()) {
             case "chrome":
                 driver = new ChromeDriver();
