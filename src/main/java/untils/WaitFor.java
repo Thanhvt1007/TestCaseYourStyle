@@ -10,13 +10,11 @@
 
     public class WaitFor {
         public static WebElement waitElementVisible(WebDriver driver, By locator) {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
             //visibilityElementLocated check element exist in dom and see if it show
             return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         }
 
-      public static void waitPageLoad(){
 
-      }
 
     }
